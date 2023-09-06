@@ -9,3 +9,9 @@ function toWeirdCase(string){
   return words.join(' ');
 }
 console.log(toWeirdCase("Weird string case"));
+
+//Second approach
+const toWeirdCase2 = (string) => string.split(' ')
+.map((word) => word.split('')
+.map((letter, index) => index % 2 === 0 ? letter.toUpperCase() : letter.toLowerCase()).join('')).join(' ');
+console.log(toWeirdCase2("Weird string case"));
