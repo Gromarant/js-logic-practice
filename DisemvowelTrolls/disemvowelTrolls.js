@@ -11,3 +11,7 @@ function disemvowel2(str) {
   return str.replaceAll(/[aeiou]+/gi, '');
 }
 console.log(disemvowel2("This website is for losers LOL!"));
+
+//third approach
+const disemvowel3 = (str) => str.replaceAll(/[aeiou]+/gi, '');
+console.log(disemvowel3("This website is for losers LOL!"));
